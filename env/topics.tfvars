@@ -2,15 +2,26 @@ environment = "env-q26337"
 
 cluster = "lkc-nwr99v"
 
-rbac_enabled = false
+rbac_enabled = true
 
 topics = [
   {
     name       = "test_topic_1"
     partitions = 4
     config = {
-      "delete.retention.ms" = "86100000"
+      "delete.retention.ms" = "100000"
     }
+    producer = "CC-WEBINAR"
+    consumer = "CC-WEBINAR"
+  },
+  {
+    name       = "test_topic_2"
+    partitions = 8
+    config = {
+      "delete.retention.ms" = "200000"
+    }
+    producer = "CC-WEBINAR"
+    consumer = "CC-WEBINAR"
   }
 ]
 
