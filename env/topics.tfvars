@@ -9,7 +9,7 @@ topics = [
     name       = "test_topic_1"
     partitions = 4
     config = {
-      "delete.retention.ms" = "100000"
+      "delete.retention.ms" = "20000000"
     }
     producer = "CC-WEBINAR"
     consumer = "CC-WEBINAR"
