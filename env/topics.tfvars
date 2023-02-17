@@ -2,7 +2,7 @@ environment = "env-q26337"
 
 cluster = "lkc-63y132"
 
-rbac_enabled = true
+rbac_enabled = false
 
 topics = [
   {
@@ -11,7 +11,6 @@ topics = [
     config = {
       "delete.retention.ms" = "10000000"
     }
-    producer = "CC-WEBINAR"
   }
 ]
 
